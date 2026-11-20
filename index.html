@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Voyages – Explorer le monde</title>
+
+  <!-- Police Google Fonts : Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Si tu utilises un framework CSS (Bootstrap, Tailwind…), ajoute son lien ICI, AVANT style.css -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- defer : le script s'exécute une fois le HTML chargé -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="Header">
+      <p>Atlas Voyages</p>
+    </div>
+  </header>
+  <main>
+    <section id="Hero">
+      <div class="text">
+        <h1>Explorer le monde</h1>
+        <p>Choisis un continent, parcours les pays et trouve ta prochaine destination.</p>
+      </div>
+      <div class="inputs">
+        <form>
+          <div id="select">
+            <label for="continent">Continent </label>
+            <select name="continent" id=" Continent">Continent</select>
+            <option value=""></option>
+          </div>
+          <div id="search">
+            <label for="search">Rechercher un pays </label>
+            <input type="text" name="search" id="Search" placeholder="Ex:Morocco">
+          </div>
+          <div id="trier">
+            <button id="Trier">Trier par population</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="Cards">
+    <div class="cards">
+        <img src="image.png" alt="">
+        <div class="infos">
+            <span>morroco</span>
+            <span>capitale:</span>
+            <span>Population:</span>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Atlas Voyages · Données : countries.dev</p>
+  </footer>
+</body>
+</html>

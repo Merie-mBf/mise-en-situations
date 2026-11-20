@@ -1,0 +1,138 @@
+:root {
+  --color-primary: #0f4c81;
+  /* en-tête, bouton, focus */
+  --color-bg: #f5f7fa;
+  /* fond de la page */
+  --color-surface: #ffffff;
+  /* cartes, formulaire, champs */
+  --color-text: #1a2433;
+  /* texte principal */
+  --color-muted: #5b6576;
+  /* texte secondaire */
+  --color-border: #d9e0e8;
+  /* bordures */
+  --color-error-bg: #fdecec;
+  /* fond du message d'erreur (bonus) */
+  --color-error-text: #b42318;
+  /* texte du message d'erreur (bonus) */
+
+  /* Police de la maquette : Inter (Google Fonts), ou une police système */
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--color-bg);
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--color-primary);
+  width: auto;
+  height: 67px;
+  padding: 6px;
+}
+
+header p {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--color-bg);
+  padding-left: 70px;
+}
+
+#Hero {
+  margin: 30px 70px 20px 70px;
+}
+
+.text h1 {
+  color: var(--color-text);
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.text p {
+  color: var(--color-muted);
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+.inputs {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 20px 20px 0px 20px;
+}
+
+.inputs form {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+
+}
+
+.inputs form div {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  gap: 10px;
+
+}
+
+.inputs form input,
+select,
+button {
+  padding: 13px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+#trier {
+  padding-top: 30px;
+}
+
+#trier button{
+  background: var( --color-primary);
+  color: var(--color-bg);
+}
+#Cards{
+  margin: 30px 70px 20px 70px;
+}
+.cards {
+  width: 300px;
+  height: 332px;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid #D9E0E8;
+}
+
+.cards img {
+  width: 300px;
+  height: 200px;
+  gap: 8px;
+
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  margin: 0;
+  padding: 0;
+  height: 80px;
+
+}
+
+footer p {
+  margin: 30px 70px 20px 70px;
+  color: var(--color-muted);
+  font-weight: 400;
+  font-size: 14px;
+}
